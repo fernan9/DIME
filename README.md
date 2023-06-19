@@ -109,6 +109,16 @@ A low-pass filter can be applied to the activity data to reduce the spikes of ac
 5. Re-run the program with the argument `-filterNoise` or `-f` followed by the desired threshold from step 4.
 6. Compare activity trace and histograms tables between filtered and non-filtered results.
 
+## Example
+
+We will score a 2-minute clip from a chill coma recovery bioassay video to demonstrate the application of DIME. Click here to download the video.
+
+## Accompanying code
+
+The following files contain the functions required to score the methods Change Point (CP) and Optimal Threshold (OT; formerly arbitrary threshold, AT).
+
+1. [Scoring R functions](https://github.com/fernan9/DIME/blob/main/DIME_functions.R)
+
 ## Notes
 
 1. The frequency of the motion detection will depend on the frame rate of your video, which is automatically detected by DIME and reported in the Log file.
