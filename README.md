@@ -96,6 +96,8 @@ The progress of the analysis will be displayed in the Terminal window.
 
 The area of the video where each individual insect performs movemenet, aka the region-of-interest (ROI), must be determined during the analysis. Once set for a `'videoName + sampleSize'` combination, the file will be automatically read in the following runs in the same video-by-size configuration. You must make a `click-hold-slide-release` movement with the mouse from the upper-left to the lower-right corner of the ROI area. You can reset the current ROI by typing 'r' for reset and then typing 'c' to confirm once the desired shape is achieved.
 
+![](https://github.com/fernan9/DIME/blob/main/BATTSI-wellSelection.gif)
+
 ## Filter functionality: low-pass
 
 A low-pass filter can be applied to the activity data to reduce the spikes of activity levels that have a technical origin, for example a camera shake caused by opening the incubator door. To apply the low-pass filter you must add the `-filterNoise` or `-f` argument to the run and specify the threshold with a number with decimal fraction (float).
