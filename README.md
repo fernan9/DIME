@@ -111,13 +111,57 @@ A low-pass filter can be applied to the activity data to reduce the spikes of ac
 
 ## Example
 
-We will score a 2-minute clip from a chill coma recovery bioassay video to demonstrate the application of DIME. Click here to download the video.
+We will score a 2-minute clip from a chill coma recovery bioassay video to demonstrate the application of DIME. [Click here]() to download the video.
+
+![](https://github.com/fernan9/DIME/blob/main/test_s30.jpg)
+
+Once we run the command:
+
+```
+python .\DIME\dime_1_1.py -v .\test.mp4 -s 30 -r
+```
+
+We can see that the activity levels of the flies in the [Activity](https://github.com/fernan9/DIME/blob/main/test_Activity_k7i2n1size30_nofilter.png) file, should look something like this:
+
+![](https://github.com/fernan9/DIME/blob/main/Test_activity.png)
+
+The scoring results should be in this [table](https://github.com/fernan9/DIME/blob/main/test_Results_k7i2n1size30_nofilter.csv) and the files mentioned above.
+
 
 ## Accompanying code
 
-The following files contain the functions required to score the methods Change Point (CP) and Optimal Threshold (OT; formerly arbitrary threshold, AT).
+The following file contains the functions required to score the methods alternative methods from the default Individual Median (IM). 
 
 1. [Scoring R functions](https://github.com/fernan9/DIME/blob/main/DIME_functions.R)
+
+The functions use the `DataFrame` file from the results as an input and give tables and plots as a result. Use `score_changePoint()` function for the Change Point scoring methods, 'scoreMacLean2022()' function to use the algorithm described in [MacLean et al. (2022)](https://www.sciencedirect.com/science/article/pii/S0022191022000087), and `score_median()` to apply the IM method with with extra information on the thresholds used.
+
+
+## Arenas
+
+In our study, we used acrylic arenas designed by students in Nick Teets' Insect Stress Biology lab at the University of Kentucky. Two models were used, Model III is preferred for small insects, Model II can be fixed for relatively large insects but the sample size is small.
+
+### Model II: Kawarasaki & Donlon 2021 (Coming soon)
+
+#### Design
+
+
+#### Laser cut files
+
+
+#### Assembly instructions
+
+
+### Model III: Cornwell 2022 (Coming soon)
+
+#### Design
+
+#### Laser cut files
+
+#### Assembly instructions
+
+
+## Bioassay procedure (Coming soon)
 
 ## Notes
 
