@@ -145,6 +145,7 @@ In our study, we used acrylic arenas designed by students in Nick Teets' Insect 
 
 #### Design
 
+![](https://github.com/fernan9/DIME/blob/main/Arena_Model2.png)
 
 #### Laser cut files
 
@@ -183,3 +184,4 @@ foreach ($file in $files) {
 # the following code will trim the video.mp4 file from 1hour 30 min 0.5 seconds to 1hour 40min 0.5 seconds into the file trimed_video.pm4
 ffmpeg -i video.mp4 -ss 01:30:00.500 -t 00:10:00 -c copy trimmed_video.mp4
 ```
+
