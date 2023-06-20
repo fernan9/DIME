@@ -177,3 +177,9 @@ foreach ($file in $files) {
     & python dime_1_1.py -v $file.FullName -s 30
 }
 ```
+4. To trim a video:
+```
+# install ffmpeg from https://ffmpeg.org/download.html
+# the following code will trim the video.mp4 file from 1hour 30 min 0.5 seconds to 1hour 40min 0.5 seconds into the file trimed_video.pm4
+ffmpeg -i video.mp4 -ss 01:30:00.500 -t 00:10:00 -c copy trimmed_video.mp4
+```
