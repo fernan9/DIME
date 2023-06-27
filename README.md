@@ -35,28 +35,28 @@ DIME can run in Terminal or PowerShell applications by calling a Python interpre
 ```
 Some arguments are mandatory, but some have default values. The possible commands that can be used are:
 + -h, --help
-* show this help message and exit
+  * show this help message and exit
 + --videoName <string>, -v <string>
-* Name of the video file to analyze
+  * Name of the video file to analyze
 + --sampleSize <int>, -s <int>
-* Number of wells in the plate
-* default: 96
+  * Number of wells in the plate
+  * default: 96
 + --iterationNumber <int>, -i <int>
-* Number of iterations for the dilation filter
-* default: 2
+  * Number of iterations for the dilation filter
+  * default: 2
 + --kernelSize <int>, -k <int>
-* Size of the kernel for the Gaussian blur
-* format: Kernel = 2 * `kernelSize` + 1
+  * Size of the kernel for the Gaussian blur
+    * format: Kernel = 2 * `kernelSize` + 1
 * default: 7 = 2 ( *3* ) + 1
 + --reverseScoring, -r
-* If set, reverse detection of the first event will be calculated
-* default: False
+  * If set, reverse detection of the first event will be calculated
+  * default: False
 + --filterNoise <flt>, -f <flt>
-* Apply percent ratio filter based on average activity in total frame
-* (default:None)
+  * Apply percent ratio filter based on average activity in total frame
+  * (default:None)
 + --numberFrames <int>, -n <int>
-* Number of frames to sample for knockdown analysis
-* default: 1
+  * Number of frames to sample for knockdown analysis
+  * default: 1
 ### Standard Run
 To score a last activity endpoint in a video `TestVideo.mp4` with 30 fruit flies (-s) with a small kernel of 3X3 pixels (k = 1, kernel = 2(1) + 1), in the folder DIME, we would run:
 ```
@@ -100,6 +100,7 @@ The functions use the `DataFrame` file from the results as an input and give tab
 In our study, we used acrylic arenas designed by students in Nick Teets' Insect Stress Biology lab at the University of Kentucky. Two models were used, Model III is preferred for small insects, Model II can be fixed for relatively large insects but the sample size is small.
 ### Model II: Kawarasaki & Donlon 2021 (Coming soon)
 #### Design
+[Details](https://github.com/fernan9/DIME/blob/main/Model-KAWARASAKI-2022.pdf)
 ![](https://github.com/fernan9/DIME/blob/main/Arena_Model2.png)
 #### Laser cut files
 [Sheet 1](https://github.com/fernan9/DIME/blob/main/Arenas_sheet1_1.5mm.pdf)
