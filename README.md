@@ -4,18 +4,18 @@ DIME is a command-line application for scoring thermal limit assays from video r
 ## Before starting (Windows)
 DIME will require the following dependencies:
 - Python 3.0+
-+ Install Python interpreter
-* Details in https://www.python.org/downloads/
-* Required libraries
+ + Install Python interpreter
+  * Details in https://www.python.org/downloads/
+  * Required libraries
 - numpy==1.20.3
 - opencv-python==4.5.3.56
 - matplotlib==3.4.2
 - pandas==1.3.1
 - OpenCV
-+ Install the PIP package-management system
-+ Install full package with:
-* `pip install opencv-contrib-python`
-* Details in https://pypi.org/project/opencv-python/
+ + Install the PIP package-management system
+ + Install full package with:
+  * `pip install opencv-contrib-python`
+  * Details in https://pypi.org/project/opencv-python/
 ## Working directory
 Your working directory must contain at least:
 - A copy of `DIME-cl.py`
