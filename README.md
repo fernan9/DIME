@@ -4,23 +4,25 @@ DIME is a command-line application for scoring thermal limit assays from video r
 ## Before starting (Windows)
 DIME will require the following dependencies:
 - Python 3.0+
- + Install Python interpreter
-  * Details in https://www.python.org/downloads/
-  * Required libraries
+  + Install Python interpreter
+    * Details in https://www.python.org/downloads/
+    * Required libraries
 - numpy==1.20.3
 - opencv-python==4.5.3.56
 - matplotlib==3.4.2
 - pandas==1.3.1
 - OpenCV
- + Install the PIP package-management system
- + Install full package with:
-  * `pip install opencv-contrib-python`
-  * Details in https://pypi.org/project/opencv-python/
+   + Install the PIP package-management system
+   + Install full package with:
+     * `pip install opencv-contrib-python`
+     * Details in https://pypi.org/project/opencv-python/
 ## Working directory
 Your working directory must contain at least:
 - A copy of `DIME-cl.py`
 - The video you want to analyze
+
 In consequence, DIME will create a new directory named as `'DIME-[name of your video]'` containing your results. The following files populate the new directory after running DIME:
+
 + a `DataFrame` file containing the raw motion data
 + a `Results` file providing the endpoint estimates per ROI defined
 + a `Log` file containing details of the run
@@ -101,6 +103,7 @@ In our study, we used acrylic arenas designed by students in Nick Teets' Insect 
 ### Model II: Kawarasaki & Donlon 2021 (Coming soon)
 #### Design
 [Details](https://github.com/fernan9/DIME/blob/main/Model-KAWARASAKI-2022.pdf)
+
 ![](https://github.com/fernan9/DIME/blob/main/Arena_Model2.png)
 #### Laser cut files
 [Sheet 1](https://github.com/fernan9/DIME/blob/main/Arenas_sheet1_1.5mm.pdf)
