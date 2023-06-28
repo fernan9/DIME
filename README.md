@@ -99,12 +99,10 @@ The following file contains the functions required to score the methods alternat
 1. [Scoring R functions](https://github.com/fernan9/DIME/blob/main/DIME_functions.R)
 The functions use the `DataFrame` file from the results as an input and give tables and plots as a result. Use `score_changePoint()` function for the Change Point scoring methods, 'scoreMacLean2022()' function to use the algorithm described in [MacLean et al. (2022)](https://www.sciencedirect.com/science/article/pii/S0022191022000087), and `score_median()` to apply the IM method with with extra information on the thresholds used.
 ## Arenas
-In our study, we used acrylic arenas designed by students in Nick Teets' Insect Stress Biology lab at the University of Kentucky. Two models were used, Model III is preferred for small insects, Model II can be fixed for relatively large insects but the sample size is small.
-### Model II: Kawarasaki & Donlon 2021 (Coming soon)
+In our study, we used acrylic arenas designed by students in Nick Teets' Insect Stress Biology lab at the University of Kentucky. Two models were used, Model III is preferred for small insects (pending), Model II can be fixed for relatively large insects but the sample size is small.
+### Model II: Kawarasaki & Donlon 2022
 #### Design
 [Details](https://github.com/fernan9/DIME/blob/main/Model-KAWARASAKI-2022.pdf)
-
-![](https://github.com/fernan9/DIME/blob/main/Arena_Model2.png)
 #### Laser cut files
 [Sheet 1](https://github.com/fernan9/DIME/blob/main/Arenas_sheet1_1.5mm.pdf)
 [Sheet 2](https://github.com/fernan9/DIME/blob/main/Arenas_sheet2_3.0mm.pdf)
