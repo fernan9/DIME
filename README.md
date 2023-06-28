@@ -49,7 +49,7 @@ Some arguments are mandatory, but some have default values. The possible command
 + --kernelSize <int>, -k <int>
   * Size of the kernel for the Gaussian blur
     * format: Kernel = 2 * `kernelSize` + 1
-* default: 7 = 2 ( *3* ) + 1
+    * default: 7 = 2 ( *3* ) + 1
 + --reverseScoring, -r
   * If set, reverse detection of the first event will be calculated
   * default: False
