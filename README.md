@@ -78,13 +78,16 @@ The area of the video where each individual insect performs movemenet, aka the r
 ![](https://github.com/fernan9/DIME/blob/main/BATTSI-wellSelection.gif)
 ## Filter functionality: low-pass
 A low-pass filter can be applied to the activity data to reduce the spikes of activity levels that have a technical origin, for example a camera shake caused by opening the incubator door. To apply the low-pass filter you must add the `-filterNoise` or `-f` argument to the run and specify the threshold with a number with decimal fraction (float).
+
 1. Run DIME in the video with standard configuration.
 2. Adjust `i` and `k` for the desired sensibility. 
 3. Identify the `Total_trace` file in the Results folder.
 4. Determine the rPIC threshold to filter. Use `Total_trace` to identify extreme peaks in the data along time and use `Total_histogram` to assess the data-set structure.
 5. Re-run the program with the argument `-filterNoise` or `-f` followed by the desired threshold from step 4.
 6. Compare activity trace and histograms tables between filtered and non-filtered results.
+
 ![](https://github.com/fernan9/DIME/blob/main/FigureS2_filtering.png)
+
 Using a low-pass filter to remove noise in motion data. First, a peak motion must be identified in the total activity plot as in panel A at 15 minutes which, once reviewing the video, corresponds to shaking of the incubator. Then, a threshold value must be selected to separate the noise from informative data. Inspecting the histogram of the total data (panel B, note exponential scale), we select a threshold of 1.0 to remove outlier values. Once the filter is applied, inspection of the filtered total activity plot reveals homogeneous data (panel C-D).
 
 ## DIME running example
